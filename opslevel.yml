@@ -1,0 +1,48 @@
+---
+version: 1
+service:
+  name: API Gateway
+  lifecycle:
+  tier: tier_1
+  product:
+  owner: backend
+  system: down_the_rabbit_hole
+  language:
+  framework:
+  description: Routes traffic to the proper service
+  aliases:
+  tags:
+  - key: alice
+    value: wonderland
+  - key: hello
+    value: world
+  - key: rabbit
+    value: hole
+  repositories:
+  - name: alan-opslevel-testing/local-test
+    path: "/"
+    provider: github
+  tools:
+  - name: test
+    category: admin
+    url: https://gitlab.com/jklabsinc/OpsLevel/-/merge_requests/5389
+    environment:
+  - name: test2
+    category: admin
+    url: https://gitlab.com/
+    environment:
+  - name: test43
+    category: code
+    url: https://google.com
+    environment:
+  - name: test77
+    category: code
+    url: https://opslevel.com
+    environment:
+  - name: test6
+    category: backlog
+    url: https://dropbox.com
+    environment:
+  dependencies:
+  - alias: authentication
+  alert_sources:

@@ -14,8 +14,6 @@ service:
   tags:
   - key: alice
     value: wonderland
-  - key: hello
-    value: world
   - key: rabbit
     value: hole
   repositories:
